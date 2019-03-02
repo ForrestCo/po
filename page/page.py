@@ -3,7 +3,7 @@
 # @File  : page.py
 # @Author: 杨崇
 # @Date  : 2019/3/1
-# @Desc  : xxx_page统一入口
+# @Desc  : page统一入口
 from page.display_page import DisPlayPage
 from page.first_network_type import FirstNetWorkType
 from page.mobile_network_page import MobileNetWorkPage
@@ -15,7 +15,7 @@ class Page(object):
     def __init__(self, driver):
         self.driver = driver
 
-    # 设置页面
+    # 设置
     def setting(self):
         return SetPage(self.driver)
 

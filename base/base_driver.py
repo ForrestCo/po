@@ -7,7 +7,7 @@
 from appium import webdriver
 
 
-def init_driver(platformName='Android', platformVersion='5.1',
+def init_driver(platformName='Android', platformVersion='6',
                    deviceName='192.168.46.101:5555', appPackage='com.android.settings',
                    appActivity='.Settings'):
     desired_caps = dict()
