@@ -6,22 +6,25 @@
 # @Desc  : null
 import time
 from base.base_driver import init_driver
-from appium import webdriver
 import pytest
 
-from page.display_page import DisPlayPage
+from page.page import Page
 
 
 class TestDisplay(object):
     def setup(self):
         # 设置参数
         self.driver = init_driver()
-        self.page = DisPlayPage(self.driver)
+        self.page = Page(self.driver)
         print("--------setup执行------------")
 
     def test_display(self):
-
-        self.page.test_more()
+        # 进入显示页面
+        self.page.setting().display()
+        # 搜索
+        self.page.display().sourch()
+        # 输入文字
+        self.page.display().input_box("123456")
 
     def teardown(self):
         time.sleep(2)

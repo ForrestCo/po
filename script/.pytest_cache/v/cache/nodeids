@@ -1,5 +1,3 @@
 [
-  "test_more.py::TestMore::()::test_2G",
-  "test_more.py::TestMore::()::test_3G",
-  "test_more.py::TestMore::()::test_bagBan"
+  "test_display.py::TestDisplay::()::test_display"
 ]
