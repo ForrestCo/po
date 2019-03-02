@@ -13,7 +13,6 @@ from page.page import Page
 
 class TestDisplay(object):
     def setup(self):
-        # 设置参数
         self.driver = init_driver()
         self.page = Page(self.driver)
         print("--------setup执行------------")
