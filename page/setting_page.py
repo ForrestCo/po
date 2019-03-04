@@ -15,7 +15,7 @@ class SetPage(BaseAction):
 
     # ********************************
 
-    big = By.XPATH, "//*[@text='无线网络']"
+    # big = By.XPATH, "//*[@text='无线网络']"
 
     def more(self):
         self.click(self.more_btn)
@@ -23,6 +23,6 @@ class SetPage(BaseAction):
     def display(self):
         self.click(self.display_btn)
 
-    # 进入无线网络
-    def bigBan(self):
-        self.click(self.big)
+    # # 进入无线网络
+    # def bigBan(self):
+    #     self.click(self.big)

@@ -17,7 +17,3 @@ def init_driver(platformName='Android', platformVersion='5',
     desired_caps['appPackage'] = appPackage
     desired_caps['appActivity'] = appActivity
     return webdriver.Remote("http://localhost:4723/wd/hub", desired_caps)
-
-
-if __name__ == '__main__':
-    init_driver()

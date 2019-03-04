@@ -5,8 +5,10 @@
 # @Date  : 2019/3/1
 # @Desc  : 把测试脚本按功能进行拆分，按照页面的形式，拆分成多个
 import time
-from base.base_driver import init_driver
+
 import pytest
+
+from base.base_driver import init_driver
 from page.page import Page
 
 
@@ -38,4 +40,5 @@ class TestMore(object):
 
 
 if __name__ == '__main__':
-    pytest.main("-s test_more.py")
+    pytest.main('-s test_more.py')
+
