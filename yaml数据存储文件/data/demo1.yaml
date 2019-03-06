@@ -1,15 +1,47 @@
 # {'age': '18', 'people': ['1', '2', '3', {'name': 'xiaoming', 'people1': ['6', '7']}, '4', '5'], 'height': '185'}
 
-age: '18'
-people:
-  - '1'
-  - '2'
-  - '3'
-  -
-    name: 'xiaoming'
-    people:
-      - '6'
-      - '7'
-  - '4'
-  - '5'
-height: '185'
+#age: '18'
+#people:
+#  - '1'
+#  - '2'
+#  - '3'
+#  -
+#    name: 'xiaoming'
+#    people:
+#      - '6'
+#      - '7'
+#  - '4'
+#  - '5'
+#height: '185'
+
+# 列表
+# {user_info: ['user_name', 'user_pwd']}
+#user_info: ['user_name', 'user_pwd']
+
+
+# 纯量
+# 包含： 字符串，布尔， 整数, 浮点， Null, 日期
+
+# 字符串
+#value: "hello"
+
+# 布尔值
+#value1: true
+#value2: false
+
+# 整数， 浮点型
+#value1: 12
+#value2: 12.2
+
+# NULL 空
+#value: ~ # ~
+#value: Null
+#value: null
+
+# 日期
+#value: 2018-12-12 12:12:12
+
+
+# 锚点& 引用 *
+
+

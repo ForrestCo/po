@@ -12,7 +12,7 @@ class ReadYaml:
         self.file_path = file_path
 
     def return_data(self):
-        with open(self.file_path, 'r') as fp:
+        with open(self.file_path, 'r', encoding='UTF-8') as fp:
             data = yaml.load(fp)
             return data
 
