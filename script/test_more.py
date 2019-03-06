@@ -19,19 +19,16 @@ class TestMore(object):
         print("--------setup执行------------")
 
     def test_2G(self):
-        self.page.setting().more()  # 进入设置页面点击更多
-        self.page.more().network()  # 进入更多页面点击移动网络
-        self.page.mobile_network().first_network_type()  # 进入移动网络页面点击首选网络
-        self.page.first_network_type().type_2G()  # 进入首选网络点击 2G 网络
+        self.page.setting.more()  # 进入设置页面点击更多
+        self.page.more.network()  # 进入更多页面点击移动网络
+        self.page.mobile_network.first_network_type()  # 进入移动网络页面点击首选网络
+        self.page.first_network_type.type_2G()  # 进入首选网络点击 2G 网络
 
     def test_3G(self):
-        self.page.setting().more()
-        self.page.more().network()
-        self.page.mobile_network().first_network_type()
-        self.page.first_network_type().type_3G()
-
-    # def test_bagBan(self):
-    #     self.page.setting().bigBan()
+        self.page.setting.more()
+        self.page.more.network()
+        self.page.mobile_network.first_network_type()
+        self.page.first_network_type.type_3G()
 
     def teardown(self):
         time.sleep(3)

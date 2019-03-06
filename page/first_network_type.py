@@ -18,4 +18,3 @@ class FirstNetWorkType(BaseAction):
 
     def type_2G(self):
         self.click(self.type_2G_btn)
-

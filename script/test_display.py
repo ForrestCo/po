@@ -19,11 +19,11 @@ class TestDisplay(object):
 
     def test_display(self):
         # 进入显示页面
-        self.page.setting().display()
+        self.page.setting.display()
         # 搜索
-        self.page.display().sourch()
+        self.page.display.sourch()
         # 输入文字
-        self.page.display().input_box("123456")
+        self.page.display.input_box("123456")
 
     def teardown(self):
         time.sleep(2)

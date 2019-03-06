@@ -23,7 +23,7 @@ class BaseAction(object):
     def find_elements(self, location, timeout=10, poll=1):
         location_by, location_value = location
         waite = WebDriverWait(self.driver, timeout, poll)
-        return waite.until(lambda x: x.driver.find_element(location_by, location_value))
+        return waite.until(lambda x: x.find_elements(location_by, location_value))
 
     # 点击事件
     def click(self, location):
@@ -31,5 +31,5 @@ class BaseAction(object):
 
     # 文本框输入
     def input_text(self, location, text):
-        self.find_element(location).sendkeys(text)
+        self.find_element(location).send_keys(text)
 
