@@ -16,4 +16,6 @@ def init_driver(platformName='Android', platformVersion='5',
     desired_caps['deviceName'] = deviceName
     desired_caps['appPackage'] = appPackage
     desired_caps['appActivity'] = appActivity
+    desired_caps['noReset'] = True
+    desired_caps['unicodeKeyboard'] = True
     return webdriver.Remote("http://localhost:4723/wd/hub", desired_caps)

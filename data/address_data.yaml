@@ -1,0 +1,14 @@
+# {"address": {"user1": {"name": "张三", "phone": "110"}}, {user2: {"name": "李四", "phone": "112"}}}
+test_add_contact:
+  test_add_contact_001:
+    name: "张三"
+    phone: "110"
+  test_add_contact_002:
+    name: "李四"
+    phone: "112"
+  test_add_contact_003:
+    name: "王五"
+    phone: "114"
+  test_add_contact_004:
+    name: "马六"
+    phone: "110"
